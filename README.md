@@ -1,87 +1,175 @@
-# 🧬 Cancer Data Analysis
+# 🧬 Cancer Data Analysis & Survival Insights
 
-A data science project focused on analyzing cancer datasets and building machine learning models to predict diagnosis outcomes.
+## 📖 Overview
+This project performs an in-depth analysis of a cancer patient dataset to uncover patterns related to:
 
----
+- Patient demographics  
+- Cancer stages  
+- Treatment effectiveness  
+- Lifestyle factors  
+- Comorbidities  
+- Genetic influences  
+- Survival outcomes  
 
-## 📌 Overview
-
-This project explores **cancer-related medical data** to identify patterns and build predictive models.  
-Using **data analysis, visualization, and machine learning**, the goal is to assist in early detection of cancer.
+The analysis focuses on identifying **key factors influencing survival rates and treatment success** using **data analysis and visualization techniques**.
 
 ---
 
 ## 🎯 Objectives
-
-- 🧹 Clean and preprocess raw data  
-- 📊 Perform Exploratory Data Analysis (EDA)  
-- 📈 Visualize important features and relationships  
-- 🤖 Build machine learning models  
-- ✅ Evaluate model performance  
+- Analyze patient demographics and geographic distribution  
+- Study survival rates across cancer stages  
+- Evaluate treatment effectiveness and duration  
+- Examine the impact of lifestyle factors (smoking, BMI)  
+- Assess the influence of comorbidities and family history  
+- Understand how multiple cancer conditions affect survival  
+- Perform time-based analysis on treatment duration  
 
 ---
 
-## 📂 Dataset
+## 📂 Dataset Description
+The dataset (`cancer_dataset1.csv`) contains detailed patient-level information, including:
 
-The dataset contains medical diagnostic features such as:
+### 👤 Patient Information
+- `id` – Patient ID  
+- `age` – Age of patient  
+- `gender` – Male/Female  
+- `country` – Patient location  
 
-- Cell size  
-- Cell shape  
-- Texture  
-- Radius  
-- Diagnosis (**Benign / Malignant**)  
+### 🧬 Medical Details
+- `cancer_stage` – Stage I to IV  
+- `survived` – Survival status (1 = Yes, 0 = No)  
+- `treatment_type` – Chemotherapy, Surgery, Radiation, Combined  
+- `diagnosis_date`, `end_treatment_date`  
 
-> 📌 *(You can update this section with the dataset source like Kaggle or UCI)*
+### ⚕️ Health & Lifestyle
+- `smoking_status`  
+- `bmi`  
+- `cholesterol_level`  
+
+### 🏥 Comorbidities
+- `asthma`  
+- `hypertension`  
+- `cirrhosis`  
+
+### 🧬 Genetic & History
+- `family_history`  
+- `other_cancer`  
+
+---
+
+## 🧹 Data Preprocessing
+- Converted date columns to datetime format  
+- Created **treatment_duration** (days between diagnosis and treatment completion)  
+- Converted age to integer format  
+- Created **age groups**:
+  - 0–20, 20–40, 40–60, 60–80, 80–110  
+
+---
+
+## 📊 Analysis Performed
+
+### 1️⃣ Patient Demographics & Geographic Analysis
+- Age distribution across cancer stages  
+- Gender distribution and average age  
+- Gender-based differences in survival and treatment  
+- Country-wise patient count and survival rates  
+- Age variation across countries and stages  
+
+---
+
+### 2️⃣ Cancer Stage & Survival Analysis
+- Survival rates across stages (Stage I–IV)  
+- Identification of stage with highest death rate  
+- Survival probability across age groups  
+- Comparison of **early-stage vs late-stage survival**  
+- Distribution of cancer stages at diagnosis  
+
+---
+
+### 3️⃣ Treatment Effectiveness & Patterns
+- Survival rates by treatment type  
+- Most commonly used treatments  
+- Treatment variation across stages  
+- Comparison: **Combined vs Single treatments**  
+- Relationship between:
+  - Treatment duration  
+  - Survival rate  
+
+---
+
+### 4️⃣ Lifestyle Factors & Risk Assessment
+- Impact of **smoking** on survival and cancer severity  
+- Effect of **BMI categories**:
+  - Underweight  
+  - Normal  
+  - Overweight  
+  - Obese  
+
+---
+
+### 5️⃣ Comorbidities & Health Conditions
+- Impact of:
+  - Asthma  
+  - Hypertension  
+  - Liver cirrhosis  
+- Comparison of survival:
+  - Single comorbidity  
+  - Multiple comorbidities  
+
+---
+
+### 6️⃣ Family History & Genetic Factors
+- Effect of family history on:
+  - Age of diagnosis  
+  - Cancer stage  
+- Comparison of stage distribution with/without family history  
+
+---
+
+### 7️⃣ Multiple Cancer Cases
+- Impact of additional cancers on survival  
+- Comparison between:
+  - Single cancer  
+  - Multiple cancers  
+
+---
+
+### 8️⃣ Time-Based Analysis
+- Validation of diagnosis and treatment dates  
+- Statistical summary of treatment duration  
+- Relationship between:
+  - Treatment duration  
+  - Survival outcomes  
+
+---
+
+## 📈 Visualizations
+The project includes extensive visualizations using:
+
+- Count plots  
+- Bar charts  
+- Scatter plots  
+- Strip plots  
+- Heatmaps (crosstab-based insights)  
+- Box plots  
 
 ---
 
 ## 🛠️ Technologies Used
-
-- 🐍 **Python**  
-- 📊 **Pandas**  
-- 🔢 **NumPy**  
-- 📉 **Matplotlib / Seaborn**  
-- 🤖 **Scikit-learn**  
-
----
-
-## 🔍 Project Workflow
-
-### 1️⃣ Data Collection
-- Load dataset from CSV file  
-
-### 2️⃣ Data Preprocessing
-- Handle missing values  
-- Encode categorical data  
-- Feature scaling  
-
-### 3️⃣ Exploratory Data Analysis (EDA)
-- Distribution plots  
-- Correlation heatmap  
-- Feature relationships  
-
-### 4️⃣ Model Building
-- Logistic Regression  
-- Decision Tree  
-- Random Forest  
-
-### 5️⃣ Model Evaluation
-- Accuracy Score  
-- Confusion Matrix  
-- Precision, Recall, F1-score  
+- Python 🐍  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Jupyter Notebook  
+- Power BI (for dashboard visualization `.pbix` file)
 
 ---
 
-## 📊 Results
-
-- ✔️ Built accurate prediction models  
-- 🔍 Identified key features influencing cancer diagnosis  
-- 📈 Visualized important data trends  
-
----
-
-## 🚀 How to Run the Project
-
-### 🔧 Step 1: Clone the Repository
-```bash
-git clone https://github.com/Pranathi274/cancer_data_analysis.git
+## 🔍 Key Insights
+- Early-stage diagnosis significantly improves survival rates  
+- Treatment effectiveness varies by type and duration  
+- Lifestyle factors like smoking and BMI influence outcomes  
+- Multiple comorbidities reduce survival probability  
+- Family history impacts diagnosis patterns  
+- Longer or optimized treatment duration can correlate with survival  
