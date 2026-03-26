@@ -1,4 +1,4 @@
-# 🧬 Cancer Data Analysis & Survival Insights
+# 🧬 Cancer Data Analysis 
 
 ## 📖 Overview
 This project performs an in-depth analysis of a cancer patient dataset to uncover patterns related to:
