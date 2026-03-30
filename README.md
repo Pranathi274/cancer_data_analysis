@@ -1,6 +1,6 @@
 # 🧬 Cancer Patient Analytics
 
-A complete end-to-end data analytics project on a large-scale clinical dataset of **890,000 cancer patients** across multiple countries. The workflow begins with **Exploratory Data Analysis (EDA) in a Jupyter Notebook** — covering data cleaning, feature engineering, and statistical analysis — and culminates in an **interactive 3-page Power BI Dashboard** that visualizes all insights.
+An end-to-end data analytics project built on a large clinical dataset of **890,000 cancer patients** from multiple countries. The project starts with **Exploratory Data Analysis (EDA) in a Jupyter Notebook**, including data cleaning, feature engineering, and statistical exploration, and concludes with an **interactive Power BI dashboard** that presents key insights.
 
 ---
 
