@@ -1,4 +1,4 @@
-# 🩺 Cancer Patient Analytics
+# 🧬 Cancer Patient Analytics
 
 A complete end-to-end data analytics project on a large-scale clinical dataset of **890,000 cancer patients** across multiple countries. The workflow begins with **Exploratory Data Analysis (EDA) in a Jupyter Notebook** — covering data cleaning, feature engineering, and statistical analysis — and culminates in an **interactive 3-page Power BI Dashboard** that visualizes all insights.
 
@@ -50,23 +50,14 @@ A complete end-to-end data analytics project on a large-scale clinical dataset o
 - Step 1 — Data Loading & Initial Inspection
 - Step 2 — Data Cleaning & Preprocessing
 - Step 3 — Feature Engineering
-- Step 4 — Exploratory Data Analysis (EDA)
-
--- Demographics
--- Cancer Stage
--- Treatment Analysis
--- Lifestyle Factors
--- Comorbidities
--- Family History
--- Multiple Cancers
--- Time Trends
--- Completion Analysis
+- Step 4 — Exploratory Data Analysis (EDA):  Demographics, Cancer Stage, Treatment Analysis, Lifestyle Factors, Comorbidities, Family History, Multiple Cancers, Time Trends, Completion Analysis
 - Power BI Dashboard
 
 
 ---
 
 ##  Pipeline
+
 CSV → Jupyter Notebook → Cleaned Dataset → Power BI Dashboard
 ---
 
@@ -92,7 +83,7 @@ jupyter notebook cancer_analysis.ipynb
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |------|--------|
