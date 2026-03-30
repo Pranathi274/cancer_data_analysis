@@ -57,8 +57,7 @@ A complete end-to-end data analytics project on a large-scale clinical dataset o
 ---
 
 ##  Pipeline
-
-CSV → Jupyter Notebook → Cleaned Dataset → Power BI Dashboard
+- Raw CSV -> Jupyter Notebook -> Cleaned & Enriched Dataset -> Power BI Dashboard
 ---
 
 ##  Getting Started
